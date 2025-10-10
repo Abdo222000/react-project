@@ -18,7 +18,7 @@ function App() {
       <BrowserRouter>
         <Navbar/>
         <Routes>
-          <Route path="/" element={<Landingpage/>}/>
+          <Route path="/react-project/" element={<Landingpage/>}/>
           <Route path="/Products" element={<Products/>}/>
           <Route path='/About' element={<About/>}/>
           <Route path="/Product/:id" element={<ProductPage/>}/>

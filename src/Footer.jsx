@@ -17,7 +17,7 @@ function Footer() {
   }, []);
 
   const quickLinks = [
-    { name: "HOME", link: "/" },
+    { name: "HOME", link: "/react-project/" },
     { name: "ABOUT", link: "/About" },
     { name: "PRODUCTS", link: "/Products" },
     { name: "CONTACTS", link: "/Contact" },

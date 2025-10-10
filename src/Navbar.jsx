@@ -9,7 +9,7 @@ function Navbar() {
     const { username, isLoggedIn } = useSelector((state) => state.user);
     const dispatch = useDispatch();
 
-    const navlinks=[{name:"Home",link:""},
+    const navlinks=[{name:"Home",link:"react-project/"},
                     {name:"ABOUT",link:"About"},
                     {name:"PRODUCTS",link:"Products"},
                     {name:"CONTACT US",link:"Contact"},
@@ -21,7 +21,7 @@ function Navbar() {
         <div className="container ">
             <div className="row">
                 <div className="col-12">
-                    <Link to="/" className="navbar-brand fw-bold" >NEWHOME</Link>
+                    <Link to="/react-project/" className="navbar-brand fw-bold" >NEWHOME</Link>
                 </div>
             </div>
             <div className="row">
