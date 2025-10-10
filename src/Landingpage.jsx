@@ -4,7 +4,6 @@ function Landingpage() {
   return (
     <div>
       <Blog/>
-      <Footer/>
     </div>
   )
 }

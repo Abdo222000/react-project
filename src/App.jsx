@@ -10,6 +10,7 @@ import ProductPage from './ProductPage.jsx'
 import CartPage from './CartPage.jsx'
 import LoginPage from './LoginPage.jsx'
 import ContactPage from './ContactPage.jsx'
+import Footer from './Footer.jsx'
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="/Login" element={<LoginPage/>}/>
           <Route path="/Contact" element={<ContactPage/>}/>
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </div>
   )
