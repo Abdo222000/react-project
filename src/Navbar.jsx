@@ -33,7 +33,7 @@ function Navbar() {
                         <ul className="navbar-nav mb-2 mb-lg-0">
                             {navlinks.map((item,index)=>{ 
                                 return <li key={index} className="nav-item">
-                                    <NavLink to={`/${item.link}`} className={`nav-link px-3 ${({isActive}) => (isActive ? "active-route":"")}`} >{item.name}</NavLink>
+                                    <NavLink to={`/${item.link}`} className={({ isActive }) =>  `nav-link px-3 ${isActive ? "active-route" : ""}` } >{item.name}</NavLink>
                                     </li>
 
                                 } )}

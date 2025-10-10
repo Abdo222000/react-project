@@ -5,7 +5,12 @@ import Signup from "./Signup.jsx";
 
 function Footer() {
   const [siteImages, setImagesData] = useState([]);
-
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
   async function getImages() {
     let res = await fetch("https://fakestoreapi.com/products");
     let data = await res.json();
@@ -39,7 +44,7 @@ function Footer() {
             <ul className="list-unstyled">
               {quickLinks.map((item, index) => (
                 <li key={index}>
-                  <Link to={item.link} className="text-white text-decoration-none d-block mb-2" >{item.name}</Link>
+                  <Link to={item.link} onClick={scrollToTop} className="text-white text-decoration-none d-block mb-2" >{item.name}</Link>
                 </li>
               ))}
             </ul>

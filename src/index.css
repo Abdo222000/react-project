@@ -43,9 +43,10 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.active-route{
-  color: #007bff;
+.navbar-nav li.nav-item .active-route{
+  color: black;
   font-weight: bold;
+  text-decoration: underline;
 }
 /*
 a {
