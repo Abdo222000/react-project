@@ -1,5 +1,4 @@
 import { NavLink,Link } from "react-router-dom"
-import { useEffect,useState } from "react"
 import { useSelector, useDispatch } from "react-redux";
 import { logout } from "./store/userSlice";
 
