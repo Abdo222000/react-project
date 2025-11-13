@@ -31,9 +31,7 @@ function Blog() {
                 <div className="row">
                     <div className="d-flex flex-row align-items-center ">
                         <h1 className="mx-auto">Get up to 30% Off <br/> New Arrivals</h1>
-                        <img src={b1} className="card-img img-fluid" style={
-                        {objectFit:"cover"}
-                    }></img>
+                        <img src={b1} className="card-img " id="blog-img" ></img>
                     </div>
                 </div>
             </div>

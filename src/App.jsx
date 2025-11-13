@@ -16,10 +16,10 @@ function App() {
 
   return (
     <div className="bg-dark-subtle">
-      <BrowserRouter>
+      <BrowserRouter basename='/react-project'>
         <Navbar/>
         <Routes>
-          <Route path="/react-project/" element={<Landingpage/>}/>
+          <Route path="/" element={<Landingpage/>}/>
           <Route path="/Products" element={<Products/>}/>
           <Route path='/About' element={<About/>}/>
           <Route path="/Product/:id" element={<ProductPage/>}/>

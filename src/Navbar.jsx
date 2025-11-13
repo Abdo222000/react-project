@@ -9,7 +9,7 @@ function Navbar() {
     const { username, isLoggedIn } = useSelector((state) => state.user);
     const dispatch = useDispatch();
 
-    const navlinks=[{name:"Home",link:"react-project/"},
+    const navlinks=[{name:"Home",link:""},
                     {name:"ABOUT",link:"About"},
                     {name:"PRODUCTS",link:"Products"},
                     {name:"CONTACT US",link:"Contact"},
@@ -21,7 +21,7 @@ function Navbar() {
         <div className="container ">
             <div className="row">
                 <div className="col-12">
-                    <Link to="/react-project/" className="navbar-brand fw-bold" >NEWHOME</Link>
+                    <Link to="/" className="navbar-brand fw-bold" >NEWHOME</Link>
                 </div>
             </div>
             <div className="row">
@@ -47,15 +47,17 @@ function Navbar() {
                         <div className="navbar-nav me-2">
                             {isLoggedIn ? (
                                 <div>
-                                    <button className="btn btn-outline-dark" onClick={() => dispatch(logout())}>Welcome, {username}</button>
+                                    <button className="btn btn-outline-dark me-2" onClick={() => dispatch(logout())}>Welcome, {username}</button>
                                 </div>
                             ):<Link to="/Login" className="nav-link">
                                     Register <i className="fa fa-user"></i>
                                 </Link>}
                             <Link to="/Products" className="btn btn-dark" role="button" > <i className="fa fa-search"></i></Link>
-                            <Link to="/Cart" className="btn btn-outline-dark ms-2">
-                                <i className="fa fa-shopping-cart"></i> Cart ({cartCount})
-                            </Link>
+                                    {isLoggedIn ? (
+                                    <Link to="/Cart" className="btn btn-outline-dark ms-2">
+                                        <i className="fa fa-shopping-cart"></i> Cart ({cartCount})
+                                    </Link>                                        
+                            ):<></>}
                         </div>
                     </div>                
                     </div>

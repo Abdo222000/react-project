@@ -48,6 +48,10 @@
   font-weight: bold;
   text-decoration: underline;
 }
+#blog-img{
+  object-fit: contain;
+  max-width: 75%;
+}
 /*
 a {
   font-weight: 500;
