@@ -52,6 +52,38 @@
   object-fit: contain;
   max-width: 75%;
 }
+@media (max-width:968px) {
+  form>div>label{
+    font-size: 0.85rem;
+  }
+  nav.navbar{
+    position: fixed;
+    z-index: 1060;
+    width: 100%;
+    top:0;
+  }
+  .navOverlay{
+    margin-top: 20px;
+    left:12.5%;
+    position: fixed;
+    z-index: 1080;
+    text-align: center;
+    width: 75%;
+    background-color: darkgray;
+    border-radius: 15px;
+    border: 1px solid black;
+  }  
+}
+/* @media (max-width:500px) {
+  .navOverlay{
+    left: 40%;
+  }  
+}
+@media (max-width:374px) {
+  .navOverlay{
+    left: 35%;
+  }  
+} */
 /*
 a {
   font-weight: 500;

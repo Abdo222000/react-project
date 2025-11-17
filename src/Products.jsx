@@ -39,11 +39,13 @@ function Products() {
     <><div className="container">
       <div className="row">
         <div className="d-flex flex-row">
+          <div className="col-md-3 col-3">
           <Filter
             selectedCategories={selectedCategories}
             onCategoryChange={handleCategoryChange}
-          />
-          <div className="col-md-9">
+          />            
+          </div>
+          <div className="col-md-9 col-9">
             <h2 className="text-center">OUR PRODUCTS</h2>
             <ShowData siteData={filteredData}/>
           </div>

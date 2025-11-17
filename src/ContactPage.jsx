@@ -22,7 +22,7 @@ function ContactPage() {
         <div className="container my-5">
         <h2 className="text-center mb-4">Contact Us</h2>
         <div className="row">
-            <div className="mx-auto col-8">
+            <div className="mx-auto col-12 col-md-8">
                 <form onSubmit={handleSubmit(onSubmit)} className="p-4 rounded">
                     <div className="mb-3">
                     <label htmlFor="name" className="form-label fw-bold">Your Name</label>

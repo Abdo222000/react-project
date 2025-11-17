@@ -6,7 +6,7 @@ function About(){
         <div className="about-section container my-5 py-5">
             <div className="row align-item-center g-4">
                 <div className="about-image col-md-6 align-self-center">
-                    <img className="img-fluid w-75 rounded" src={about_image} alt="About"/>
+                    <img className="img-fluid w-100" src={about_image} alt="About"/>
                 </div>
             <div className="about-text col-md-6">
                 <h2 className="about-h2 fw-bold mb-3">ABOUT US</h2>
