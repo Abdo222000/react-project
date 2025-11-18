@@ -1,5 +1,6 @@
 import React from 'react'
 import Background from './assets/background.webp'
+import Background2 from './assets/background2.jpg'
 import b1 from './assets/b1.jpg'
 import b2 from './assets/b2.jpg'
 import b3 from './assets/b3.jpg'
@@ -11,7 +12,7 @@ function Blog() {
                 <div className="card mx-auto">
                 <img
                     className="card-img img-fluid"
-                    src={Background}
+                    src={Background2}
                     alt="Card"
                     style={
                         {objectFit:"cover",height:"500px"}
